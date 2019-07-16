@@ -21,7 +21,7 @@ storage_image_reference {
 publisher = "MicrosoftWindowsServer"
 offer = "WindowsServe"
 sku = "2012-R2-Datacenter"
-os_version = "1903"
+version = "lattest"
 }
 
 os_profile_windows_config {
@@ -35,3 +35,7 @@ admin_password = "Pa$$w0rd@123"
 }
 
 }
+
+
+error
+compute.VirtualMachinesClient#CreateOrUpdate: Failure sending request: StatusCode=400 -- Original Error: Code="InvalidParameter" Message="The value of parameter imageReference.version is invalid." Target="imageReference.version"
